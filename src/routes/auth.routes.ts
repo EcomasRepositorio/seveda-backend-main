@@ -6,5 +6,5 @@ import { authenticate } from "../middlewares/auth.middlewares";
 
 export const authRoute = Router();
 
-authRoute.post("/user/register", authenticate, adminRole, registerUser);
+authRoute.post("/user/register", registerUser);
 authRoute.post("/user/login", loginUser);
